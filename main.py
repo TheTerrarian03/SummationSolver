@@ -132,7 +132,7 @@ def parse_input_to_summation(input: str):
     return Summation(c, eq, start, end)
 
 # step 1: get the user's input for sum equation
-user_eq = input("Please enter your summation equation you want to solve here:\n(Make sure to use only `x`)\nThe format is c∑[equation],([start num]->[end_num])\n> ")
+user_eq = input("Please enter your summation equation you want to solve here:\n(Make sure to use only `x` for your variable)\nThe format is `[c]∑[equation],([start num]->[end_num])`\n> ")
 
 # step 2: parse the equation. This is a big step
 sum = parse_input_to_summation(user_eq)
